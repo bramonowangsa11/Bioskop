@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.seat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #b8b8b8;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+/* Tambahkan aturan CSS berikut ke dalam file style.css */
+.seat.selected {
+    background-color: #2ecc71; /* Warna hijau untuk kursi yang dipilih */
+}
+
+
+.occupied {
+    background-color: #e74c3c; /* Warna kursi yang sudah dipesan */
+}
+
+.text {
+    margin-top: 16px;
+    font-size: 14px;
+}
